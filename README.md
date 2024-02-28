@@ -8,7 +8,7 @@ height:100%;
 min-width: 1000px;
 z-index:-10;
 zoom: 1;
-  background-image: url(https://mathinstitutes.org/uploads/2021/07/images/12424_highlight_40.png);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center 0;
@@ -28,4 +28,23 @@ zoom: 1;
 </head>
 <div class="bjimg"></div>
 
-# To be released...
+# 因为开学了不知道些什么所以整一个烂活其实是为了祈祷问题有进展以及明天天气再暖和点吧
+
+<font size="2" color="grey">发布于2024.2.28</font></br>
+> **定理.** 所有自然数都是有趣的.
+
+*证明*. 用反证法. 假设所有无聊的自然数构成的集合$B$非空，那么由最小数原理$B$有最小数，记为$n$. 但是**$n$是最小的无聊自然数**真的很有趣好不好，这与$n\in B$矛盾！所以所有自然数都是有趣的. $\Box$
+
+最后附上最小数原理的一个严格证明(集合论学者更喜欢称其为**良序原理**).
+
+> **最小数原理** 任意一个自然数的非空子集都存在最小数.
+
+*证明*. 任取$\mathbb{N}$的非空子集$S$，构造
+
+$$
+L:=\{ n\in\mathbb{N}: n\leq a, \forall a\in S\}.
+$$
+
+首先$0\in L$，因为所有自然数都大于等于$0$(自然$L$非空)；同时$L\neq \mathbb{N}$，因为对任取$a\in S$，$a+1\notin L$. 所以一定存在$n/_0\in L$使得$n/_0+1\notin L$，否则数学归纳法(Peano公理)给出$L=\mathbb{N}$从而导致矛盾. 我们断言$n/_0$就是$S$中的最小数，因为$n/_0\in L\Rightarrow n/_0\leq a, \forall a\in S$；同时$n/_0+1\notin L\Rightarrow $存在$k\in S, k<n/_0+1$，联合前一个结论可得$n/_0=k\in S$，所以最小数存在. $\Box$
+
+
